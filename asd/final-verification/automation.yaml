@@ -1,0 +1,18 @@
+enabled: true
+entrypoint: .venv/bin/python main.py
+keep_alive: null
+model: null
+name: Final verification
+preset_metadata:
+  preset_type: prompt
+  prompt: Verify git sync works.
+prompt: Verify git sync works.
+setup_script_path: setup.sh
+tarball_source:
+  type: internal
+  url: null
+timeout: 600
+trigger:
+  schedule: 0 6 * * *
+  timezone: UTC
+  type: cron
