@@ -1,0 +1,20 @@
+enabled: true
+entrypoint: .venv/bin/python main.py
+keep_alive: null
+model: null
+name: Git sync smoke test
+preset_metadata:
+  preset_type: prompt
+  prompt: Summarize open pull requests.
+prompt: Summarize open pull requests.
+setup_script_path: setup.sh
+tarball_executables:
+- setup.sh
+tarball_source:
+  type: internal
+  url: null
+timeout: 600
+trigger:
+  schedule: 0 9 * * *
+  timezone: UTC
+  type: cron
