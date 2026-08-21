@@ -1,0 +1,26 @@
+enabled: true
+entrypoint: python3 main.py
+keep_alive: null
+model: null
+name: Daily news digest
+preset_metadata:
+  template:
+    config:
+      feeds: 'https://news.ycombinator.com/rss
+
+        https://feeds.arstechnica.com/arstechnica/index
+
+        https://www.theverge.com/rss/index.xml'
+      topics: artificial intelligence, open source, developer tools
+    id: news-digest
+    version: 1.0.0
+prompt: null
+setup_script_path: null
+tarball_source:
+  type: internal
+  url: null
+timeout: 900
+trigger:
+  schedule: 0 8 * * *
+  timezone: UTC
+  type: cron
